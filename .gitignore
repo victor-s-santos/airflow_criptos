@@ -3,3 +3,5 @@
 .env
 .venv/
 *.ipynb_checkpoints/
+logs/
+mongodb-data/
