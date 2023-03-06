@@ -24,4 +24,5 @@ def _get_json_response_from_api():
     session.headers.update(headers)
     response = session.get(url, params=parameters)
     btc_price = json.loads(response.text)["data"]["BTC"]["quote"]["USD"]["price"]
+    btc_symbol = json.loads(response.text)["data"]["BTC"]["symbol"]
     print(f"Btc current price: {btc_price}")
